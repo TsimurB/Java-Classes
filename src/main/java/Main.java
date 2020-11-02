@@ -28,13 +28,10 @@ public class Main {
         costumersSelected.CostumersPrintOut();
         System.out.println();
 
-        //a) список покупателей в алфавитном порядке;
         Collections.sort(customers,familyName);
         customers.CostumersPrintOut();
         System.out.println();
 
-        //b) список покупателей, у которых номер кредитной карточки находится
-        //   в заданном интервале.        //
         int startPos = 1500,finPos = 3500;
         for (int i = 0; i <= customers.size()-1;i++){
             Customer costumer = (Customer) customers.get(i);
